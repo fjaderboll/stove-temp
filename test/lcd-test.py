@@ -23,18 +23,25 @@ if __name__=='__main__':
         display.write_text("size2",60,57,2,display.white)
         
         display.fill_rect(0,80,120,120,0x1805)
-        display.text("ACC_X={:+.2f}".format(xyz[0]),20,100-3,display.white)
-        display.text("ACC_Y={:+.2f}".format(xyz[1]),20,140-3,display.white)
-        display.text("ACC_Z={:+.2f}".format(xyz[2]),20,180-3,display.white)
+        display.write_text("ACC_X",30,82,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[0]),30,95,2,display.white)
+        display.write_text("ACC_Y",30,122,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[1]),30,135,2,display.white)
+        display.write_text("ACC_Z",30,162,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[2]),30,175,2,display.white)
 
         display.fill_rect(120,80,120,120,0xF073)
-        display.text("GYR_X={:+3.2f}".format(xyz[3]),125,100-3,display.white)
-        display.text("GYR_Y={:+3.2f}".format(xyz[4]),125,140-3,display.white)
-        display.text("GYR_Z={:+3.2f}".format(xyz[5]),125,180-3,display.white)
+        display.write_text("GYR_X",130,82,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[3]),130,95,2,display.white)
+        display.write_text("GYR_Y",130,122,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[4]),130,135,2,display.white)
+        display.write_text("GYR_Z",130,162,1,display.white)
+        display.write_text("{:+.2f}".format(xyz[5]),130,175,2,display.white)
         
         display.fill_rect(0,200,240,40,0x180f)
         Vbat = battery.read_voltage()
-        display.text("Vbat={:.2f}".format(Vbat),80,215,display.white)
+        display.write_text("Vbat",80,205,1,display.white)
+        display.write_text("{:+.2f}".format(Vbat),80,215,2,display.white)
         
         display.show()
         
