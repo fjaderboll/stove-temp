@@ -28,4 +28,12 @@ use the bundled `rp2-pico-20220117-v1.18.uf2`.
 
 ## Historical data
 1. Do action X to bring up the QR-code and scan
-2. Input string to script Y to format it into a csv-file
+	* `2 bytes` (interval in seconds) + n * `9 bits` (integer value of temperature 0 - 512&deg;), formatted as HEX
+2. Input string to script Y to format it into a csv-file:
+	```cs
+	time;temperature;
+	0;22;
+	60;32;
+	120;45;
+	180;61;
+	```
