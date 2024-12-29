@@ -5,7 +5,12 @@ A modified version of an ordinary stove fan, where the thermoelectric generator
 is also powering a display and a microcontroller showing the temperature of the
 stove.
 
-Historical values can be extracted via a QR-code on the display.
+![draft](doc/draft.jpg "Draft")
+
+I'll put it on the back, so the fan kan be kept, but will have to change the rotation direction of the fan. Also attaching magnets, so it can be placed vertically on the side of the stove. Built-in accelerator/gyroscope should automatically rotate the screen.
+
+Historical values can be extracted via a QR-code on the display
+(if memory is enough).
 
 ## Setup
 
