@@ -1,5 +1,7 @@
 # Stove Temperature
-**NOTE** *This is early in development and not yet working as planned*
+
+> [!WARNING]
+> This is early in development and not yet working as planned
 
 A modified version of an ordinary stove fan, where the thermoelectric generator
 is also powering a display and a microcontroller showing the temperature of the
@@ -11,6 +13,10 @@ I'll put it on the back, so the fan kan be kept, but will have to change the rot
 
 Historical values can be extracted via a QR-code on the display
 (if memory is enough).
+
+## TEC vs TEG
+TEC = Thermoelectric Cooler, uses Peltier Effect (eg TEC1-12706)
+TEG = Thermoelectric Generator, uses Seebeck Effect (eg SP1848-27145)
 
 ## Setup
 
